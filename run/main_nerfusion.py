@@ -131,6 +131,7 @@ if __name__ == '__main__':
             'pixel_norm_mean': opt.pixel_norm_mean,
             'pixel_norm_std': opt.pixel_norm_std,
             'bound': opt.bound,
+            'resolution': opt.base_resolution,
             # 'n_voxel_levels': opt.n_voxel_levels,
             'n_fusion_levels': opt.n_fusion_levels,
             'sparse_conv_dropout': opt.sparse_conv_dropout,
