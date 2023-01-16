@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=6 python run_nerf.py --config configs/replica.txt

@@ -1,3 +1,13 @@
+output_imap
+cull_replica_mesh
+*.zip
+output
+data
+logs
+.vscode
+3rdparty
+Datasets
+ckpts
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -127,3 +137,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# PyCharm
+.idea/
+
+# Checkpoints
+DEBUG.bak/
+DEBUG/
+data
+output
