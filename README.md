@@ -28,7 +28,7 @@ NeRF4SeRe: Neural Radiance Fields for Scene Reconstruction
 
 ## TODO
 - [x] installation guideline
-- [x] training and testing code for NeRF, INeRF and Torch-NGP
+- [x] training and testing code for NeRF, INeRF and Instant-NGP
 - [x] implementation of NeRFusion
 - [ ] NICE-SLAM integration
 - [ ] visualizations
@@ -61,13 +61,13 @@ NeRF4SeRe: Neural Radiance Fields for Scene Reconstruction
 ## Training Pipeline
 Adding `--device x` to specify the GPU device (default: 0).
 
-1. NeRF
+1. Vanilla NeRF
 
     ```sh
     python run/main_nerf.py --config configs/nerf/replica/room0.txt
     ```
 
-2. Torch-NGP
+2. Instant-NGP
 
     ```sh
     python run/main_ngp.py data/replica/room0/ --workspace output/ngp/replica/room0/ --fp16 --cuda_ray
