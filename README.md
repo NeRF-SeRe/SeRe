@@ -106,3 +106,7 @@ python run/main_ngp.py data/replica/room0/ --workspace output/ngp/replica/room0/
 * [torch-ngp](https://github.com/ashawkey/torch-ngp)
 * [NeRFusion](https://github.com/jetd1/NeRFusion)
 * [NeuralRecon](https://github.com/zju3dv/NeuralRecon)
+
+## For TA
+
+Our latest report and appendices are in `doc`.
