@@ -8,7 +8,7 @@ Project of AI3604 Computer Vision, Shanghai Jiao Tong University.
 ## TODO
 - [x] installation guideline
 - [x] training and testing code for NeRF, INeRF and Torch-NGP
-- [ ] implementation of NeRFusion
+- [x] implementation of NeRFusion
 - [ ] NICE-SLAM integration
 
 ## Installation
