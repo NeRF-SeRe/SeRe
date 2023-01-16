@@ -109,4 +109,4 @@ python run/main_ngp.py data/replica/room0/ --workspace output/ngp/replica/room0/
 
 ## For TA
 
-Our latest report and appendices are in `doc`.
+Our latest report and appendices are in `docs`.
