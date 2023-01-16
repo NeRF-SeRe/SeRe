@@ -2,7 +2,28 @@
 NeRF4SeRe: Neural Radiance Fields for Scene Reconstruction
 </h1>
 <p align="center">
-Project of AI3604 Computer Vision, Shanghai Jiao Tong University.
+    Project of AI3604 Computer Vision, SJTU.
+    <br />
+    <a href="https://github.com/Ailon-Island"><strong>Wei Jiang *</strong></a>
+    ·
+    <a href="https://www.linkedin.cn/incareer/in/kangrui-mao-376694239"><strong>Kangrui Mao *</strong></a>
+    ·
+    <a href="https://github.com/blakery-star"><strong>Gu Zhang *</strong></a>
+    ·
+    <a href="https://haoyuzhen.com"><strong>Haoyu Zhen *</strong></a>
+    <br />
+    \star = equal contribution
+</p>
+<p align="center">
+  <a href='https://github.com/NeRF-SeRe/SeRe/docs/sere.pdf'>
+    <img src='https://img.shields.io/badge/Project%20Paper-PDF-blue?style=flat&logo=Googlescholar&logoColor=blue' alt='Paper PDF'>
+  </a>
+  <a href="https://sere-cv-project.netlify.app">
+    <img alt="Pre" src="https://img.shields.io/badge/Presentation-Slides-green?logo=Hugo&logoColor=green">
+  </a>
+<a href="https://pytorch.org/get-started/locally/">
+    <img alt="PyTorch" src="https://img.shields.io/badge/Pytorch-1.11.0-red?logo=pytorch&logoColor=red">
+  </a>
 </p>
 
 ## TODO
@@ -10,18 +31,24 @@ Project of AI3604 Computer Vision, Shanghai Jiao Tong University.
 - [x] training and testing code for NeRF, INeRF and Torch-NGP
 - [x] implementation of NeRFusion
 - [ ] NICE-SLAM integration
+- [ ] visualizations
 
 ## Installation
+  ```sh
+  git clone --recursive https://github.com/NeRF-SeRe/SeRe.git
+  cd SeRe
+  ```
 
 1. Environment setup
     You should install google-sparsehash first following the instructions in torchsparse (e.g., `sudo apt-get install libsparsehash-dev` on Ubuntu and `brew install google-sparsehash` on Mac OS).
 
     Then install the dependencies:
     ```sh
+    conda create -c conda-forge -n sere python=3.9
     pip install -r requirements.txt
     pip install git+https://github.com/facebookresearch/pytorch3d.git
     pip install --upgrade git+https://github.com/mit-han-lab/torchsparse.git@v1.4.0
-    export PYTHONPATH="/path/to/{ENV_NAME}:$PYTHONPATH"
+    export PYTHONPATH="/path/to/sere:$PYTHONPATH"
     ```
 
 2. Dataset preparation
@@ -74,8 +101,8 @@ python run/main_ngp.py data/replica/room0/ --workspace output/ngp/replica/room0/
 
 ## Acknowledgement
 
-* nerf-pytorch
-* inerf
-* torch-ngp
-* NeRFusion
-* NeuralRecon
+* [nerf-pytorch](https://github.com/yenchenlin/nerf-pytorch)
+* [inerf](https://github.com/yenchenlin/iNeRF-public)
+* [torch-ngp](https://github.com/ashawkey/torch-ngp)
+* [NeRFusion](https://github.com/jetd1/NeRFusion)
+* [NeuralRecon](https://github.com/zju3dv/NeuralRecon)
