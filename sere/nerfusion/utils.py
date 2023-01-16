@@ -958,7 +958,7 @@ class Trainer(object):
             total_loss += loss.detach()
 
         if self.ema is not None:
-            self.ema.update()
+            self.ema.update(parameters=self.model.parameters())
 
         average_loss = total_loss.item() / step
 
